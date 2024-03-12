@@ -6,12 +6,12 @@
 ### Installing
 
 - Be inside active venv
-- Run: `pip freeze > requirements.txt`
+- Run: `pip install -r requirements.txt`
 
 ### Dumping
 
 - Be inside active venv
-- Run: `pip install -r requirements.txt`
+- Run: `pip freeze > requirements.txt`
 
 
 ## VENV
