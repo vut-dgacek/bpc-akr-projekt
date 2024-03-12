@@ -6,7 +6,7 @@
 ### Installing
 
 - Be inside active venv
-- Run: `pip3 freeze > requirements.txt`
+- Run: `pip freeze > requirements.txt`
 
 ### Dumping
 
