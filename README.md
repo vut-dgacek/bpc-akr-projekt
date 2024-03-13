@@ -18,7 +18,7 @@
 
 ### Creation
 
-- Be inside `client` or `server` directory
+- Be inside project directory
 - Run: `python3 -m venv .venv`
 
 ### Activation
