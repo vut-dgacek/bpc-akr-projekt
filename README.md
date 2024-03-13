@@ -16,10 +16,16 @@
 
 ## VENV
 
-### Activation
+### Creation
 
 - Be inside `client` or `server` directory
 - Run: `python3 -m venv .venv`
+
+### Activation
+
+***IDK if this works on Poweshell***
+
+- Run: `source .venv/bin/activate`
 
 ### Deactivation
 
