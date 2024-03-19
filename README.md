@@ -5,7 +5,7 @@
 Windows:
 
 - Rename `install.txt` to `install.ps1`
-- Run: `Set-ExecutionPolicy RemoteSigned -Scope process`
+- Run: `Set-ExecutionPolicy Unrestricted -Scope process`
 - Run: `install.ps1`
 
 Linux:
@@ -19,7 +19,7 @@ Linux:
 Windows:
 
 - Rename: `run-client.txt` to `run-client.ps1`
-- Run: `Set-ExecutionPolicy RemoteSigned -Scope process`
+- Run: `Set-ExecutionPolicy Unrestricted -Scope process`
 - Run: `run-client.ps1`
 
 
