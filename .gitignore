@@ -1,3 +1,11 @@
+### Our files
+install.sh
+install.ps1
+run-client.ps1
+run-client.sh
+run-server.ps1
+run-server.sh
+
 ### Python https://github.com/github/gitignore/blob/main/Python.gitignore
 # Byte-compiled / optimized / DLL files
 __pycache__/
