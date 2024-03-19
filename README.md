@@ -1,33 +1,36 @@
 # bpc-akr-projekt
 
+## Install
 
-## Required packages
+Windows:
 
-### Installing
+- Rename `install.txt` to `install.ps1`
+- Run: `Set-ExecutionPolicy RemoteSigned -Scope process`
+- Run: `install.ps1`
 
-- Be inside active venv
-- Run: `pip install -r requirements.txt`
+Linux:
 
-### Dumping
+- Rename `install.txt` to `install.sh`
+- Run: `install.sh`
+
+
+## Run
+
+Windows:
+
+- Rename: `run-client.txt` to `run-client.ps1`
+- Run: `Set-ExecutionPolicy RemoteSigned -Scope process`
+- Run: `run-client.ps1`
+
+
+Linux:
+
+- Rename: `run-client.txt` to `run-client.sh`
+- Run: `run-client.sh`
+
+
+## Dumping dependencies
 
 - Be inside active venv
 - Run: `pip freeze > requirements.txt`
-
-
-## VENV
-
-### Creation
-
-- Be inside project directory
-- Run: `python3 -m venv .venv`
-
-### Activation
-
-***IDK if this works on Poweshell***
-
-- Run: `source .venv/bin/activate`
-
-### Deactivation
-
-- Close terminal
 
