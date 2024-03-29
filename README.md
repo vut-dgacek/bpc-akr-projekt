@@ -18,15 +18,15 @@ Linux:
 
 Windows:
 
-- Rename: `run-client.txt` to `run-client.ps1`
+- Rename: `client.txt` to `client.ps1`
 - Run: `Set-ExecutionPolicy Unrestricted -Scope process`
-- Run: `run-client.ps1`
+- Run: `client.ps1`
 
 
 Linux:
 
-- Rename: `run-client.txt` to `run-client.sh`
-- Run: `run-client.sh`
+- Rename: `client.txt` to `client.sh`
+- Run: `client.sh`
 
 
 ## Dumping dependencies
