@@ -12,6 +12,7 @@ Linux:
 
 - Rename `install.txt` to `install.sh`
 - Run: `install.sh`
+- If you are running different shell than bash run: `bash install.sh`
 
 
 ## Run
@@ -27,6 +28,7 @@ Linux:
 
 - Rename: `client.txt` to `client.sh`
 - Run: `client.sh`
+- If you are running different shell than bash run: `bash client.sh`
 
 
 ## Dumping dependencies
