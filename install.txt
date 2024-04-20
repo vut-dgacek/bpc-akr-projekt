@@ -13,7 +13,7 @@ echo \" <<'POWERSHELL_SCRIPT' >/dev/null # " | Out-Null
 # ===== PowerShell Script Begin =====
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
+python.exe -m pip install --upgrade pip
 pip install -r requirements.txt
 deactivate
 # ====== PowerShell Script End ======
