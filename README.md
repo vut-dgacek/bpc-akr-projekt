@@ -19,20 +19,13 @@ Linux:
 
 Windows:
 
-- Rename: `client.txt` to `client.ps1`
+- Rename: `RUN.txt` to `RUN.ps1`
 - Run: `Set-ExecutionPolicy Unrestricted -Scope process`
 - Run: `client.ps1`
 
 
 Linux:
 
-- Rename: `client.txt` to `client.sh`
-- Run: `client.sh`
-- If you are running different shell than bash run: `bash client.sh`
-
-
-## Dumping dependencies
-
-- Be inside active venv
-- Run: `pip freeze > requirements.txt`
-
+- Rename: `RUN.txt` to `RUN.sh`
+- Run: `RUN.sh`
+- If you are running different shell than bash run: `bash RUN.sh`
