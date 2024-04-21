@@ -10,21 +10,16 @@ PATH_MEDIA = 'data/video1.mp4'
 
 
 class Server:
-	privkey = ""
-	pubkey = ""
-	shrkey = ""
-
 	def __init__(self):
 		self.privkey = Cipher.generate_private_key(public_exponent=65537, key_size=4096)
-
+		self.pubkey = ""
+		self.shrkey = ""
 
 class Client:
-	privkey = ""
-	pubkey = ""
-	shrkey = ""
-
 	def __init__(self):
 		self.privkey = Cipher.generate_private_key(public_exponent=65537, key_size=4096)
+		self.pubkey = ""
+		self.shrkey = ""
 
 
 # Low budget authentication
@@ -49,7 +44,7 @@ def unregister():
 def main():
 	while (True):
 		print("#==============================================================#")
-		print("#                Low Budget \"Streaming Server\"                 #")
+		print("#              Low Budget \"\"\"Streaming\"\"\" Server               #")
 		print("#==============================================================#")
 		print("# Options:")
 		print("#     1. Login")
