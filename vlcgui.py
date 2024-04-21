@@ -17,7 +17,7 @@ class Player(QtWidgets.QMainWindow):
 
 		# Basic media player instance
 		self.instance = vlc.Instance()
-		#self.instance = vlc.Instance("--verbose 2".split())
+		#self.instance = vlc.Instance("--verbose 2".split())	# Usefull for debugging
 		self.mediaplayer = self.instance.media_player_new()
 		# Add media
 		self.media = self.instance.media_new(sys.argv[1])
