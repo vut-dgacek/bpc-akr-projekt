@@ -1,14 +1,8 @@
 ## Our files
-install.sh
-install.ps1
-install.bat
-client.sh
-client.ps1
-client.bat
-server.sh
-server.ps1
-server.bat
-temp
+*.sh
+*.ps1
+*.bat
+temp/
 
 ### Python https://github.com/github/gitignore/blob/main/Python.gitignore
 # Byte-compiled / optimized / DLL files

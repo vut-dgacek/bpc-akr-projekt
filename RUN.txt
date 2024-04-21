@@ -12,7 +12,7 @@ BATCH_SCRIPT
 echo \" <<'POWERSHELL_SCRIPT' >/dev/null # " | Out-Null
 # ===== PowerShell Script Begin =====
 .venv\Scripts\Activate.ps1
-python src\main.py
+python main.py
 deactivate
 # ====== PowerShell Script End ======
 while ( ! $MyInvocation.MyCommand.Source ) { $input_line = Read-Host }
@@ -26,7 +26,7 @@ set +o histexpand 2>/dev/null
 set -e -u
 CWD="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 PATH="$CWD/.venv/bin:$PATH"
-python "$CWD/src/main.py" "$@"
+python "$CWD/main.py" "$@"
 exit $?
 # ====== Bash Script End ======
 case $- in *"i"*) cat /dev/stdin >/dev/null ;; esac
