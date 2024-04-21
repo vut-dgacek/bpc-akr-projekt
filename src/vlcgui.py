@@ -1,4 +1,6 @@
-import os, sys, platform
+import os
+import sys
+import platform
 
 # If platform is winblows use included binary
 if platform.system() == "Windows":
@@ -14,10 +16,11 @@ class Player(QtWidgets.QMainWindow):
 		self.setWindowTitle("Media Player")
 
 		# Basic media player instance
-		self.instance = vlc.Instance("--verbose 2".split())
+		self.instance = vlc.Instance()
+		#self.instance = vlc.Instance("--verbose 2".split())
 		self.mediaplayer = self.instance.media_player_new()
 		# Add media
-		self.media = self.instance.media_new("../temp/tmp.mp4")
+		self.media = self.instance.media_new(sys.argv[1])
 		self.mediaplayer.set_media(self.media)
 		self.media.parse()
 
