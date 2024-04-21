@@ -55,7 +55,8 @@ def main():
 		useropt = input("Select option: ")
 		match useropt:
 			case "1":
-				login()
+				run(['python', 'vlcgui.py', PATH_MEDIA])
+				#login()
 				break
 			case "2":
 				register()
