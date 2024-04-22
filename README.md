@@ -1,5 +1,7 @@
 # bpc-akr-projekt
 
+I have no idea why github thinks that tags added by `user <user@localhost>` were added by some random person.
+
 ## Install
 
 Windows:
