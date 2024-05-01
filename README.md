@@ -1,7 +1,7 @@
 # bpc-akr-projekt
 
 I have no idea why github thinks that tags added by `user <user@localhost>` were added by some random person.
-So apparently github doesn't like tag v1.1.0-final. Just user v1.1.1
+So apparently github doesn't like tag v1.1.0-final. Just use v1.1.2
 
 ## Install
 
