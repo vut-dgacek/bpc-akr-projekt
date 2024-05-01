@@ -8,8 +8,6 @@ from PyQt5 import QtWidgets, QtGui, QtCore
 # If platform is winblows use included binary
 if platform.system() == "Windows":
 	VLC_PATH = f'{pathlib.Path(__file__).resolve().parent}\\bin\\vlc-3.0.20'
-	print(VLC_PATH)
-	#os.environ['PATH']
 	os.environ['PYTHON_VLC_MODULE_PATH'] = VLC_PATH
 
 
@@ -128,11 +126,24 @@ class Player(QtWidgets.QMainWindow):
 
 
 def main():
-	app = QtWidgets.QApplication(sys.argv)
-	player = Player()
-	player.show()
-	player.resize(1280, 720)
-	sys.exit(app.exec_())
+	try:
+		app = QtWidgets.QApplication(sys.argv)
+		player = Player()
+		player.show()
+		player.resize(1280, 720)
+
+		# Return exit code
+		sys.exit(app.exec_())
+	finally:
+		# Cleanup tempdir after player exit
+		folder = 'data/tmp'
+		for filename in os.listdir(folder):
+			file_path = os.path.join(folder, filename)
+			try:
+				if os.path.isfile(file_path):
+					os.unlink(file_path)
+			except Exception as e:
+				print('Failed to delete %s. Reason: %s' % (file_path, e))
 
 
 if __name__ == "__main__":
